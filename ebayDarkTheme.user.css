@@ -58,59 +58,31 @@
      .adv-s .btn-prim{
          background: var(--button-primary-color);
     }
-     #gh-eb-Alerts-o, .gh-flyout__menu, 
-    /* Watchlist menu */
-     .gh-eb-active #gh-ug, .gh-shop-active #gh-shop-a, .gh-menu .gh-submenu, 
-    /* My eBay dropdown menu */
-     #gh-eb-u-o, 
-    /* User dropdown menu */
-     .s-item__link, #glbfooter, .b-module, .tabs, .fake-tabs, .b-img, .b-img img, .b-listing.srp-list .s-item--bgcolored .s-item__image, .b-listing .s-item--bgcolored .s-item__image, .s-item, .b-info, .srp-controls, .srp-sort, .b-tile, .page-notice, .b-guidance--text .b-guidancecard__link, .dne-itemtile, .whitebg, div.gh-o, div.gh-eb-o, .whitebg .pagecontainer__leftnav .container, .cusr-serv .article_main_container, .white_background, .my-container.item-list .container-options .list-bulk-actions, .white-background, 
-    /* Logout background */
-     .x-footer, html > body #hlGlobalFooter, body {
+     #why2buy *, #vi-atl-lnk-vim, #RightSummaryPanel *, .merch-placements-container, .m-quick-nav, .saved-for-later-container, .desktop .cartsummary, .cart-bucket, .right-section *, #mainContent, .mainContent, .summary, /* Everything before this were things that Still Hsu forgot, I added it to apply to more sites */ #gh-eb-Alerts-o, .gh-flyout__menu, /* Watchlist menu */ .gh-eb-active #gh-ug, .gh-shop-active #gh-shop-a, .gh-menu .gh-submenu, /* My eBay dropdown menu */ #gh-eb-u-o, /* User dropdown menu */ .s-item__link, #glbfooter, .b-module, .tabs, .fake-tabs, .b-img, .b-img img, .b-listing.srp-list .s-item--bgcolored .s-item__image, .b-listing .s-item--bgcolored .s-item__image, .s-item, .b-info, .srp-controls, .srp-sort, .b-tile, .page-notice, .b-guidance--text .b-guidancecard__link, .dne-itemtile, .whitebg, div.gh-o, div.gh-eb-o, .whitebg .pagecontainer__leftnav .container, .cusr-serv .article_main_container, .white_background, .my-container.item-list .container-options .list-bulk-actions, .white-background, /* Logout background */ .x-footer, html > body #hlGlobalFooter, body {
          background-color: var(--theme-color);
          color: var(--text-color);
     }
-     #LeftPanel, .gh-modal__menu, .srp-controls__control--legacy, .b-guidance--text .b-guidancecard__link, .fake-tabs.srp-format-tabs, #gh-cat-box {
+     #BottomPanel *, #LeftPanel, .gh-modal__menu, .srp-controls__control--legacy, .b-guidance--text .b-guidancecard__link, .fake-tabs.srp-format-tabs, #gh-cat-box {
          background: var(--theme-color);
     }
      html>body{
          background: var(--theme-color) !important;
     }
-     #gf-f, #gf-fbtn, .ebayui-dne-banner-text, .hl-cat-nav__flyout, 
-    /* Homepage category dropdown menu */
-     .my-ebay .menu-list .selected, .shipto .menu-button .expand-btn, 
-    /* Ship to dropdown menu */
-     .shipto .fake-menu-button__menu, .shipto .menu-button__menu, .merch-module.merch-module.merch-module .container_wrapper, 
-    /* "Sponsored item" sections in individual listing */
-     .tab-content-m, 
-    /* Item description */
-     .vi-swc-wrapper, .srp-controls__control--legacy, .card.ebayui-dne-item-featured-card--topDeals, .gh-eb-li-a.gh-icon, div.c-std, ul.l-adv li a.selected, .card.ebayui-dne-item-featured-card--topDeals > h2, div.sbx-c div.rct-bb, .gh-sch-prom #gh-topl .gh-t > a, .cusr-serv .article_relate_box .article_relate, .gh-sch-prom #gh-ug, #gh .gh-acc-a2, .flyout-notice, .srp-view-options .btn, .srp-view-options button[type].btn, .w2b, .srp-main--isLarge .fake-tabs.srp-format-tabs li.fake-tabs__item--current, #gh-top, #gh-gb {
+    #payment-info > .order-summary, section.section-notice.section-notice--information, li.carousel__snap-point.carousel-item *,  #gf-f, #gf-fbtn, .ebayui-dne-banner-text, .hl-cat-nav__flyout, /* Homepage category dropdown menu */ .my-ebay .menu-list .selected, .shipto .menu-button .expand-btn, /* Ship to dropdown menu */ .shipto .fake-menu-button__menu, .shipto .menu-button__menu, .merch-module.merch-module.merch-module .container_wrapper, /* "Sponsored item" sections in individual listing */ .tab-content-m, /* Item description */ .vi-swc-wrapper, .srp-controls__control--legacy, .card.ebayui-dne-item-featured-card--topDeals, .gh-eb-li-a.gh-icon, div.c-std, ul.l-adv li a.selected, .card.ebayui-dne-item-featured-card--topDeals > h2, div.sbx-c div.rct-bb, .gh-sch-prom #gh-topl .gh-t > a, .cusr-serv .article_relate_box .article_relate, .gh-sch-prom #gh-ug, #gh .gh-acc-a2, .flyout-notice, .srp-view-options .btn, .srp-view-options button[type].btn, .w2b, .srp-main--isLarge .fake-tabs.srp-format-tabs li.fake-tabs__item--current, #gh-top, #gh-gb {
          background-color: var(--theme-color-light);
          color: var(--text-color);
     }
-     div.title--dweb span.textbox, div.title--dweb span.textbox input, .article-search-input-container .flex-mode, input[type="text"], input[type="password"], select, textarea, input.textbox__control, 
-    /* Input textbox */
-     .actPanel, .cusr-serv .rowItem .columnItem, .additionalTool, .watchListCmp, li.hl-cat-nav__js-show, 
-    /* Homepage category button */
-     .gh-eb-active .gh-eb-li-a, .gh-hvr:hover .gh-eb-li-a, .gh-flyout-active .gh-eb-li-a, #gh-cat-box, .leftNavBar > ul li.current-link, div.sbx-c h2.rct-bg, #gh-ac-box {
+     div.title--dweb span.textbox, div.title--dweb span.textbox input, .article-search-input-container .flex-mode, input[type="text"], input[type="password"], select, textarea, input.textbox__control, /* Input textbox */ .actPanel, .cusr-serv .rowItem .columnItem, .additionalTool, .watchListCmp, li.hl-cat-nav__js-show, /* Homepage category button */ .gh-eb-active .gh-eb-li-a, .gh-hvr:hover .gh-eb-li-a, .gh-flyout-active .gh-eb-li-a, #gh-cat-box, .leftNavBar > ul li.current-link, div.sbx-c h2.rct-bg, #gh-ac-box {
          background-color: var(--theme-color-dark);
          color: var(--text-color);
     }
     /* ======================== */
     /* === Border color === */
     /* ======================== */
-     li.hl-cat-nav__js-show, 
-    /* Homepage category button */
-     #gh-eb-u-o, 
-    /* User dropdown menu */
-     #gh .gh-eb-active #gh-ug, .gh-eb-active .gh-eb-li-a, .gh-flyout__menu, 
-    /* Watchlist menu */
-     #gh-ug, .gh-sch-prom #gh-cat-box, .gh-sch-prom #gh-cat, .gh-sch-prom #gh-cat:hover, .gh-sch-prom #gh-ac-box {
+     li.hl-cat-nav__js-show, /* Homepage category button */ #gh-eb-u-o, /* User dropdown menu */ #gh .gh-eb-active #gh-ug, .gh-eb-active .gh-eb-li-a, .gh-flyout__menu, /* Watchlist menu */ #gh-ug, .gh-sch-prom #gh-cat-box, .gh-sch-prom #gh-cat, .gh-sch-prom #gh-cat:hover, .gh-sch-prom #gh-ac-box {
          border-color: var(--theme-color-light);
     }
-     #gh-eb-Alerts-o, .gh-ui-6-5 .gh-hvr:hover .gh-eb-li-a, .gh-ui-6-5 .gh-eb-active .gh-eb-li-a, .gh-ui-6-5 .gh-eb-active #gh-ug, .gh-ui-6-5 .gh-shop-active #gh-shop-a, .gh-menu .gh-submenu, 
-    /* My eBay dropdown menu */
-     .b-list ul > li, .gh-sch-prom #gh-gb {
+     #gh-eb-Alerts-o, .gh-ui-6-5 .gh-hvr:hover .gh-eb-li-a, .gh-ui-6-5 .gh-eb-active .gh-eb-li-a, .gh-ui-6-5 .gh-eb-active #gh-ug, .gh-ui-6-5 .gh-shop-active #gh-shop-a, .gh-menu .gh-submenu, /* My eBay dropdown menu */ .b-list ul > li, .gh-sch-prom #gh-gb {
          border-color: var(--theme-color-dark);
     }
      .signin-link {
@@ -125,17 +97,17 @@
     /* ======================== */
     /* === Text color === */
     /* ======================== */
-     a, a:active, a:link, ul#bc a:link, .srp-controls--selected-value, html a:link, .g-novisited a:visited {
+     li.medium-text.m-tab.selected.m-tab__title.fake-tabs__item > a, a, a:active, a:link, ul#bc a:link, .srp-controls--selected-value, html a:link, .g-novisited a:visited {
          color: var(--text-color-anchor);
     }
-     .mbg a:link, .fol-widget > a{
+     section.m-links-accordion > ul > li > a, ul.secondary.show > li > a, .mbg a:link, .fol-widget > a{
          color: var(--text-color-anchor) !important;
          filter: brightness(90%);
     }
      .signin-link:active, .signin-link:visited, .signin-link:link, .signout-banner-text {
          color: var(--section-highlight-lightgreen);
     }
-     .leftNavBar > ul li a, .pgCenter div, .gh-eb-li-a, .leftNavBar > ul li, .gh-ui-6-5 #gh-eb a {
+     .merch-placements-container *, .container-item-col__info-tertiary.container-item-col__info-displayPrice > div > span.BOLD, .container-item-col__info-item-info-primary.container-item-col__info-item-info-title > div > a, button, a.nav-link, .leftNavBar > ul li a, .pgCenter div, .gh-eb-li-a, .leftNavBar > ul li, .gh-ui-6-5 #gh-eb a {
          color: var(--text-color) !important;
     }
     /* #555 */
@@ -148,10 +120,10 @@
          filter: brightness(110%);
     }
     /* #333 */
-     h1, h2, h3, h4, h5, .cont, .dne-show-less.dne-itemtile .dne-show-more-link > a, .dne-show-more.dne-itemtile .dne-show-more-link > a, .condText, .dne-itemtile-detail .dne-itemtile-original-price .itemtile-price-bold, .dne-itemtile-detail > a > .dne-itemtile-title, .dne-itemtile-detail .dne-itemtile-price span, #gh-sbc h3, #gh-sbc h3 a, .gh-w, .it-ttl, .sh-title, .si-ttl, .vi-swc-title h2, .ebayui-dne-banner-text > h2, .vi-swc-header, .cusr-serv .rowItem .columnItem .footNote, .b-info__pricerange, .b-info__price, .b-info__trendprice, .b-info__title, .hl-cat-nav__flyout li a:hover, .pgHeading > h1, .vi-hd-ops #CenterPanel .ap-numWatcher.ap-watchCount-hot *, .vi-hd-ops #CenterPanel .vi-qtyS-hot, .vi-hd-ops #CenterPanel span.vi-qtyS-hot a, .vi-hd-ops #CenterPanel .vi-qtyA-hot, .vi-hd-ops #CenterPanel .topinfo a.vi-bidC-hot *, .vi-hd-ops #CenterPanel .topinfo a.vi-bidC-hot:hover, .hl-cat-nav__active span, .hl-cat-nav__flyout h4, .topTitle h1, .sh-svc, .w2b-subhead, .b-guidancecard__title, .srp-main--isLarge .fake-tabs.srp-format-tabs li.fake-tabs__item--current .srp-format-tabs-h2, .vi-hd-ops .mm-as, .vi-hd-ops .vi-eu-region .mm-as, .vi-hd-ops .ebaylocale_en_GB .mm-as, .pagecontainer__leftnav .b-categorynavigations .b-textlink, .pagecontainer__leftnav .b-speciallinks .b-textlink, .b-title, .skin-large .b-breadcrumb ol li a, .mm-op, #gh-un, .gh-item-bold {
+     .page-title > h1, h1, h2, h3, h4, h5, .cont, .dne-show-less.dne-itemtile .dne-show-more-link > a, .dne-show-more.dne-itemtile .dne-show-more-link > a, .condText, .dne-itemtile-detail .dne-itemtile-original-price .itemtile-price-bold, .dne-itemtile-detail > a > .dne-itemtile-title, .dne-itemtile-detail .dne-itemtile-price span, #gh-sbc h3, #gh-sbc h3 a, .gh-w, .it-ttl, .sh-title, .si-ttl, .vi-swc-title h2, .ebayui-dne-banner-text > h2, .vi-swc-header, .cusr-serv .rowItem .columnItem .footNote, .b-info__pricerange, .b-info__price, .b-info__trendprice, .b-info__title, .hl-cat-nav__flyout li a:hover, .pgHeading > h1, .vi-hd-ops #CenterPanel .ap-numWatcher.ap-watchCount-hot *, .vi-hd-ops #CenterPanel .vi-qtyS-hot, .vi-hd-ops #CenterPanel span.vi-qtyS-hot a, .vi-hd-ops #CenterPanel .vi-qtyA-hot, .vi-hd-ops #CenterPanel .topinfo a.vi-bidC-hot *, .vi-hd-ops #CenterPanel .topinfo a.vi-bidC-hot:hover, .hl-cat-nav__active span, .hl-cat-nav__flyout h4, .topTitle h1, .sh-svc, .w2b-subhead, .b-guidancecard__title, .srp-main--isLarge .fake-tabs.srp-format-tabs li.fake-tabs__item--current .srp-format-tabs-h2, .vi-hd-ops .mm-as, .vi-hd-ops .vi-eu-region .mm-as, .vi-hd-ops .ebaylocale_en_GB .mm-as, .pagecontainer__leftnav .b-categorynavigations .b-textlink, .pagecontainer__leftnav .b-speciallinks .b-textlink, .b-title, .skin-large .b-breadcrumb ol li a, .mm-op, #gh-un, .gh-item-bold {
          color: var(--text-color-light);
     }
-     #gh-eb-u-o #gh-uid {
+     span.ux-textspans.ux-textspans--BOLD, h2.fdbk-detail-list__title, h2.fdbk-seller-rating__title, #gh-eb-u-o #gh-uid {
          color: var(--text-color-light) !important;
     }
      .cusr-serv .article_main_container .article_main p, body #CenterPanel .actPanel .vi-price span, body #CenterPanel .actPanel .mm-dp div *{
@@ -175,10 +147,12 @@
     /* ======================================= */
     /* === Below this was added by LostFox === */
     /* ===---------------------------------=== */
-    /* === Everything is very inefficient  === */
-    /* === I did it by page instead of all === */
-    /* === the pages at once. I also just  === */
-    /* ===    guesstimated the colours.    === */
+    /* == Almost all of what was done below == */
+    /* == stylized the search page. I think == */
+    /* == it looks pretty good. Not as much == */
+    /* == effort went into all the other    == */
+    /* == pages, I found what the previous  == */
+    /* == style missed and added those.     == */
     /* ======================================= */
      
      
@@ -258,7 +232,7 @@
     }
      .srp-controls__sort .srp-controls__control {
          border: solid 2px #827f7f;
-         border-radius: 10px;
+         border-radius: 5px;
     }
      label.srp-controls__sort-label {
          color: white !important;
@@ -319,7 +293,7 @@
      .filter-menu-button__button-cell {
          filter: invert(1);
     }
-     span.filter-menu-button__menu {
+     span.filter-menu-button__menu, span.fake-menu-button__menu.fake-menu-button__menu--reverse {
          filter: invert(0.85);
     }
      .s-zipcode-entry .fake-link {
@@ -332,11 +306,42 @@
      span.select {
          filter: invert(1);
     }
-     .x-refine__text-list__container.chevron-container, .icon-btn.lightbox-dialog__close {
+     .x-refine__text-list__container.chevron-container, .icon-btn.lightbox-dialog__close, button.pagination__previous, a.pagination__next, a.pagination__previous, button.pagination__next {
          filter: invert(0.85);
          left: 5px;
     }
      span.select > svg.icon.icon--dropdown {
          right: 5px;
     }
+     li.carousel__snap-point.srp-carousel-list__item.srp-carousel-list__item--group-has-title > div > a.srp-carousel-list__item-link, li.carousel__snap-point.srp-carousel-list__item > div > a.srp-carousel-list__item-link > div {
+         background: #575a5e;
+         color: white;
+         transition: background .3s ease-in-out;
+    }
+     li.carousel__snap-point.srp-carousel-list__item.srp-carousel-list__item--group-has-title > div > a.srp-carousel-list__item-link:hover {
+         background: #567df3;
+     }
+     .srp-controls__control.srp-view-options > span > span.fake-menu-button > button.fake-menu-button__button.btn.btn--secondary {
+         background: #a4a4a4;
+    }
+     input#gh-ac.gh-tb.ui-autocomplete-input, select#gh-cat.gh-sb {
+         color: #b9b9b9;
+     }
+     svg.icon.icon--search {
+         filter: invert(0.6);
+     }
+     .gh-minicart-footer, .gh-minicart-header *, .gh-info__title {
+         background-color: var(--theme-color);
+         color: white;
+         border: transparent;
+     }
+     div#ghno > ul.ghno__list *, div#ghno > div.ghno__empty-notif-hidden * {
+         background: var(--theme-color);
+     }
+     div.srp-refinements-guidance.srp-refinements-guidance--gray-pills > h2.srp-answer__title {
+         color: var(--text-color);
+     }
+     body.vi-bb-flex {
+        background: var(--theme-color) !important;
+     }
 }
