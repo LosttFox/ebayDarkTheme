@@ -8,142 +8,488 @@
 @namespace    domain("signin.ebay.com")
 @namespace    domain("faccountsettings.ebay.com")
 @namespace    github.com/Still34/azura-styles
-@homepageURL  https://github.com/LosttFox/ebayDarkTheme
-@updateURL    https://raw.githubusercontent.com/LosttFox/ebayDarkTheme/master/ebayDarkTheme.user.css
-@version      0.8.0
+@homepageURL  https://github.com/AKASGaming/ebayDarkTheme
+@version      0.12.0
 ==/UserStyle== */
- @-moz-document domain("ebay.com"), domain("www.ebay.com"), domain("accountsettings.ebay.com"), domain("signin.ebay.com") {
-     :root {
-         --color-background-default: var(--theme-color);
-         --color-text-default: var(--text-color);
-         --theme-color: hsl(240, 6%, 10%);
-         --theme-color-light: hsl(240, 6%, 15%);
-         --theme-color-dark: hsl(240, 6%, 5%);
-         --dropdown-items-background-color: var(--theme-color-light);
-         --text-color: hsl(200, 4%, 85%);
-         --text-color-dark: hsl(200, 4%, 25%);
-         --text-color-light: hsl(200, 4%, 95%);
-         --text-color-white: hsl(200, 0%, 100%);
-         --text-color-error: hsl(360, 100%, 40%);
-         --text-color-anchor: hsl(225, 89%, 60%);
-         --dropdown-item-foreground-color: var(--text-color-light);
-         --button-primary-color: hsl(225, 89%, 30%);
-         --button-primary-background-color: var(--button-primary-color);
-         --button-primary-disabled: hsl(0, 0%, 22%);
-         --section-highlight-orange: hsl(15, 93%, 25%);
-         --section-highlight-green: hsl(148, 93%, 15%);
-         --section-highlight-lightgreen: hsl(150, 84%, 45%);
+@-moz-document domain("ebay.com"),
+domain("www.ebay.com"),
+domain("accountsettings.ebay.com"),
+domain("signin.ebay.com") {
+    :root {
+        --color-background-default: var(--theme-color);
+        --color-text-default: var(--text-color);
+        --theme-color: hsl(240, 6%, 10%);
+        --theme-color-light: hsl(240, 6%, 15%);
+        --theme-color-dark: hsl(240, 6%, 5%);
+        --dropdown-items-background-color: var(--theme-color-light);
+        --text-color: hsl(200, 4%, 85%);
+        --text-color-dark: hsl(200, 4%, 25%);
+        --text-color-light: hsl(200, 4%, 95%);
+        --text-color-white: hsl(200, 0%, 100%);
+        --text-color-error: hsl(360, 100%, 40%);
+        --text-color-anchor: hsl(225, 89%, 60%);
+        --dropdown-item-foreground-color: var(--text-color-light);
+        --button-primary-color: hsl(225, 89%, 30%);
+        --button-primary-background-color: var(--button-primary-color);
+        --button-primary-disabled: hsl(0, 0%, 22%);
+        --section-highlight-orange: hsl(15, 93%, 25%);
+        --section-highlight-green: hsl(148, 93%, 15%);
+        --section-highlight-lightgreen: hsl(150, 84%, 45%);
     }
+
     /* ======================== */
     /* === Background color === */
     /* ======================== */
-     button.btn--primary, a.fake-btn--primary, button.btn--primary:focus, a.fake-btn--primary:focus, button.btn--primary:hover, a.fake-btn--primary:hover, button.btn--primary:active, a.fake-btn--primary:active {
-         background-color: var(--button-primary-color);
-         border-color: var(--button-primary-color);
+    button.btn--primary,
+    a.fake-btn--primary,
+    button.btn--primary:focus,
+    a.fake-btn--primary:focus,
+    button.btn--primary:hover,
+    a.fake-btn--primary:hover,
+    button.btn--primary:active,
+    a.fake-btn--primary:active {
+        background-color: var(--button-primary-color);
+        border-color: var(--button-primary-color);
     }
-     button.btn--primary[disabled]:hover, button.btn--primary[aria-disabled="true"]:hover, button.btn--primary[disabled]:focus, button.btn--primary[aria-disabled="true"]:focus, button.btn--primary[disabled], button.btn--primary[aria-disabled="true"] {
-         background-color: var(--button-primary-disabled);
+
+    button.btn--primary[disabled]:hover,
+    button.btn--primary[aria-disabled="true"]:hover,
+    button.btn--primary[disabled]:focus,
+    button.btn--primary[aria-disabled="true"]:focus,
+    button.btn--primary[disabled],
+    button.btn--primary[aria-disabled="true"] {
+        background-color: var(--button-primary-disabled);
     }
-     .hl-mweb-text-banner, .hl-loyalty {
-         border-color: var(--section-highlight-orange) !important;
-         background-color: var(--section-highlight-orange) !important;
+
+    .hl-mweb-text-banner,
+    .hl-loyalty {
+        border-color: var(--section-highlight-orange) !important;
+        background-color: var(--section-highlight-orange) !important;
     }
-     .signout-banner-container, .hl-full-bleed-banner__container {
-         border-color: var(--section-highlight-green) !important;
-         background-color: var(--section-highlight-green) !important;
+
+    .signout-banner-container,
+    .hl-full-bleed-banner__container {
+        border-color: var(--section-highlight-green) !important;
+        background-color: var(--section-highlight-green) !important;
     }
-     a.fake-pill--primary, a.fake-pill--selected, button.pill--primary, button.pill--selected, .gh-sch-prom#gh .btn.btn-ter, a.fake-btn--primary, .gh-sch-prom#gh .btn.btn-prim {
-         background-color: var(--button-primary-color);
+
+    a.fake-pill--primary,
+    a.fake-pill--selected,
+    button.pill--primary,
+    button.pill--selected,
+    .gh-sch-prom#gh .btn.btn-ter,
+    a.fake-btn--primary,
+    .gh-sch-prom#gh .btn.btn-prim {
+        background-color: var(--button-primary-color);
     }
-     .adv-s .btn-prim{
-         background: var(--button-primary-color);
+
+    .adv-s .btn-prim {
+        background: var(--button-primary-color);
     }
-     #why2buy *, #vi-atl-lnk-vim, #RightSummaryPanel *, .merch-placements-container, .m-quick-nav, .saved-for-later-container, .desktop .cartsummary, .cart-bucket, .right-section *, #mainContent, .mainContent, .summary, /* Everything before this were things that Still Hsu forgot, I added it to apply to more sites */ #gh-eb-Alerts-o, .gh-flyout__menu, /* Watchlist menu */ .gh-eb-active #gh-ug, .gh-shop-active #gh-shop-a, .gh-menu .gh-submenu, /* My eBay dropdown menu */ #gh-eb-u-o, /* User dropdown menu */ .s-item__link, #glbfooter, .b-module, .tabs, .fake-tabs, .b-img, .b-img img, .b-listing.srp-list .s-item--bgcolored .s-item__image, .b-listing .s-item--bgcolored .s-item__image, .s-item, .b-info, .srp-controls, .srp-sort, .b-tile, .page-notice, .b-guidance--text .b-guidancecard__link, .dne-itemtile, .whitebg, div.gh-o, div.gh-eb-o, .whitebg .pagecontainer__leftnav .container, .cusr-serv .article_main_container, .white_background, .my-container.item-list .container-options .list-bulk-actions, .white-background, /* Logout background */ .x-footer, html > body #hlGlobalFooter, body {
-         background-color: var(--theme-color);
-         color: var(--text-color);
+
+    #why2buy *,
+    #vi-atl-lnk-vim,
+    #RightSummaryPanel *,
+    .merch-placements-container,
+    .m-quick-nav,
+    .saved-for-later-container,
+    .desktop .cartsummary,
+    .cart-bucket,
+    .right-section *,
+    #mainContent,
+    .mainContent,
+    .summary,
+    /* Everything before this were things that Still Hsu forgot, I added it to apply to more sites */
+    #gh-eb-Alerts-o,
+    .gh-flyout__menu,
+    /* Watchlist menu */
+    .gh-eb-active #gh-ug,
+    .gh-shop-active #gh-shop-a,
+    .gh-menu .gh-submenu,
+    /* My eBay dropdown menu */
+    #gh-eb-u-o,
+    /* User dropdown menu */
+    .s-item__link,
+    #glbfooter,
+    .b-module,
+    .tabs,
+    .fake-tabs,
+    .b-img,
+    .b-img img,
+    .b-listing.srp-list .s-item--bgcolored .s-item__image,
+    .b-listing .s-item--bgcolored .s-item__image,
+    .s-item,
+    .b-info,
+    .srp-controls,
+    .srp-sort,
+    .b-tile,
+    .page-notice,
+    .b-guidance--text .b-guidancecard__link,
+    .dne-itemtile,
+    .whitebg,
+    div.gh-o,
+    div.gh-eb-o,
+    .whitebg .pagecontainer__leftnav .container,
+    .cusr-serv .article_main_container,
+    .white_background,
+    .my-container.item-list .container-options .list-bulk-actions,
+    .white-background,
+    /* Logout background */
+    .x-footer,
+    html > body #hlGlobalFooter,
+    body {
+        background-color: var(--theme-color);
+        color: var(--text-color);
     }
-     #BottomPanel *, #LeftPanel, .gh-modal__menu, .srp-controls__control--legacy, .b-guidance--text .b-guidancecard__link, .fake-tabs.srp-format-tabs, #gh-cat-box {
-         background: var(--theme-color);
+
+    #BottomPanel *,
+    #LeftPanel,
+    .gh-modal__menu,
+    .srp-controls__control--legacy,
+    .b-guidance--text .b-guidancecard__link,
+    .fake-tabs.srp-format-tabs,
+    #gh-cat-box {
+        background: var(--theme-color);
     }
-     html>body{
-         background: var(--theme-color) !important;
+
+    html > body {
+        background: var(--theme-color) !important;
     }
-    #payment-info > .order-summary, section.section-notice.section-notice--information, li.carousel__snap-point.carousel-item *,  #gf-f, #gf-fbtn, .ebayui-dne-banner-text, .hl-cat-nav__flyout, /* Homepage category dropdown menu */ .my-ebay .menu-list .selected, .shipto .menu-button .expand-btn, /* Ship to dropdown menu */ .shipto .fake-menu-button__menu, .shipto .menu-button__menu, .merch-module.merch-module.merch-module .container_wrapper, /* "Sponsored item" sections in individual listing */ .tab-content-m, /* Item description */ .vi-swc-wrapper, .srp-controls__control--legacy, .card.ebayui-dne-item-featured-card--topDeals, .gh-eb-li-a.gh-icon, div.c-std, ul.l-adv li a.selected, .card.ebayui-dne-item-featured-card--topDeals > h2, div.sbx-c div.rct-bb, .gh-sch-prom #gh-topl .gh-t > a, .cusr-serv .article_relate_box .article_relate, .gh-sch-prom #gh-ug, #gh .gh-acc-a2, .flyout-notice, .srp-view-options .btn, .srp-view-options button[type].btn, .w2b, .srp-main--isLarge .fake-tabs.srp-format-tabs li.fake-tabs__item--current, #gh-top, #gh-gb {
-         background-color: var(--theme-color-light);
-         color: var(--text-color);
+
+    #payment-info > .order-summary,
+    section.section-notice.section-notice--information,
+    li.carousel__snap-point.carousel-item *,
+    #gf-f,
+    #gf-fbtn,
+    .ebayui-dne-banner-text,
+    .hl-cat-nav__flyout,
+    /* Homepage category dropdown menu */
+    .my-ebay .menu-list .selected,
+    .shipto .menu-button .expand-btn,
+    /* Ship to dropdown menu */
+    .shipto .fake-menu-button__menu,
+    .shipto .menu-button__menu,
+    .merch-module.merch-module.merch-module .container_wrapper,
+    /* "Sponsored item" sections in individual listing */
+    .tab-content-m,
+    /* Item description */
+    .vi-swc-wrapper,
+    .srp-controls__control--legacy,
+    .card.ebayui-dne-item-featured-card--topDeals,
+    .gh-eb-li-a.gh-icon,
+    div.c-std,
+    ul.l-adv li a.selected,
+    .card.ebayui-dne-item-featured-card--topDeals > h2,
+    div.sbx-c div.rct-bb,
+    .gh-sch-prom #gh-topl .gh-t > a,
+    .cusr-serv .article_relate_box .article_relate,
+    .gh-sch-prom #gh-ug,
+    #gh .gh-acc-a2,
+    .flyout-notice,
+    .srp-view-options .btn,
+    .srp-view-options button[type].btn,
+    .w2b,
+    .srp-main--isLarge .fake-tabs.srp-format-tabs li.fake-tabs__item--current,
+    #gh-top,
+    #gh-gb {
+        background-color: var(--theme-color-light);
+        color: var(--text-color);
     }
-     div.title--dweb span.textbox, div.title--dweb span.textbox input, .article-search-input-container .flex-mode, input[type="text"], input[type="password"], select, textarea, input.textbox__control, /* Input textbox */ .actPanel, .cusr-serv .rowItem .columnItem, .additionalTool, .watchListCmp, li.hl-cat-nav__js-show, /* Homepage category button */ .gh-eb-active .gh-eb-li-a, .gh-hvr:hover .gh-eb-li-a, .gh-flyout-active .gh-eb-li-a, #gh-cat-box, .leftNavBar > ul li.current-link, div.sbx-c h2.rct-bg, #gh-ac-box {
-         background-color: var(--theme-color-dark);
-         color: var(--text-color);
+
+    div.title--dweb span.textbox,
+    div.title--dweb span.textbox input,
+    .article-search-input-container .flex-mode,
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea,
+    input.textbox__control,
+    /* Input textbox */
+    .actPanel,
+    .cusr-serv .rowItem .columnItem,
+    .additionalTool,
+    .watchListCmp,
+    li.hl-cat-nav__js-show,
+    /* Homepage category button */
+    .gh-eb-active .gh-eb-li-a,
+    .gh-hvr:hover .gh-eb-li-a,
+    .gh-flyout-active .gh-eb-li-a,
+    #gh-cat-box,
+    .leftNavBar > ul li.current-link,
+    div.sbx-c h2.rct-bg,
+    #gh-ac-box {
+        background-color: var(--theme-color-dark);
+        color: var(--text-color);
     }
+
     /* ======================== */
     /* === Border color === */
     /* ======================== */
-     li.hl-cat-nav__js-show, /* Homepage category button */ #gh-eb-u-o, /* User dropdown menu */ #gh .gh-eb-active #gh-ug, .gh-eb-active .gh-eb-li-a, .gh-flyout__menu, /* Watchlist menu */ #gh-ug, .gh-sch-prom #gh-cat-box, .gh-sch-prom #gh-cat, .gh-sch-prom #gh-cat:hover, .gh-sch-prom #gh-ac-box {
-         border-color: var(--theme-color-light);
+    li.hl-cat-nav__js-show,
+    /* Homepage category button */
+    #gh-eb-u-o,
+    /* User dropdown menu */
+    #gh .gh-eb-active #gh-ug,
+    .gh-eb-active .gh-eb-li-a,
+    .gh-flyout__menu,
+    /* Watchlist menu */
+    #gh-ug,
+    .gh-sch-prom #gh-cat-box,
+    .gh-sch-prom #gh-cat,
+    .gh-sch-prom #gh-cat:hover,
+    .gh-sch-prom #gh-ac-box {
+        border-color: var(--theme-color-light);
     }
-     #gh-eb-Alerts-o, .gh-ui-6-5 .gh-hvr:hover .gh-eb-li-a, .gh-ui-6-5 .gh-eb-active .gh-eb-li-a, .gh-ui-6-5 .gh-eb-active #gh-ug, .gh-ui-6-5 .gh-shop-active #gh-shop-a, .gh-menu .gh-submenu, /* My eBay dropdown menu */ .b-list ul > li, .gh-sch-prom #gh-gb {
-         border-color: var(--theme-color-dark);
+
+    #gh-eb-Alerts-o,
+    .gh-ui-6-5 .gh-hvr:hover .gh-eb-li-a,
+    .gh-ui-6-5 .gh-eb-active .gh-eb-li-a,
+    .gh-ui-6-5 .gh-eb-active #gh-ug,
+    .gh-ui-6-5 .gh-shop-active #gh-shop-a,
+    .gh-menu .gh-submenu,
+    /* My eBay dropdown menu */
+    .b-list ul > li,
+    .gh-sch-prom #gh-gb {
+        border-color: var(--theme-color-dark);
     }
-     .signin-link {
-         border-color: var(--section-highlight-lightgreen);
+
+    .signin-link {
+        border-color: var(--section-highlight-lightgreen);
     }
+
     /* #ccc */
     /* #ddd */
     /* #e5e5e5 */
-     #gf-fbtn, .rct-hm, .ebayui-dne-item-pattern-card.ebayui-dne-item-pattern-card-no-padding > .row > .col .item:first-child, .ebayui-dne-item-pattern-card.ebayui-dne-item-pattern-card-no-padding > .row > .col .item:last-child, .ebayui-dne-featured-with-padding .card.ebayui-dne-item-featured-card--topDeals > h2, .ebayui-dne-featured-with-padding .card.ebayui-dne-item-featured-card--topDeals, .hl-cat-nav, div.sbx-c div.rct-bb, .rct-c, .ebayui-dne-featured-with-padding .ebayui-dne-item-featured-card > .row > .col .dne-itemtile, .gh-sch-prom#gh-gb , .ebayui-dne-banner-text, .gh-sch-prom #gh-gb, .gh-sch-prom.gh-w .gh-divider-l, .gh-ui-6-5.gh-sch-prom.gh-w .gh-divider-l, .gh-w li.gh-divider, .gh-sch-prom.gh-w li.gh-divide, .gh-sch-prom #gh-top, .x-flyout .flyout-notice, .srp-controls__control--legacy, .b-guidance--text .b-guidancecard__link, .fake-tabs.srp-format-tabs, .srp-grid .s-item, .s-item.s-item--large .s-item__wrapper, .whitebg .b-module, .srp-main--isLarge .b-list.srp-grid > .srp-controls{
-         border-color: var(--text-color-dark);
+    #gf-fbtn,
+    .rct-hm,
+    .ebayui-dne-item-pattern-card.ebayui-dne-item-pattern-card-no-padding > .row > .col .item:first-child,
+    .ebayui-dne-item-pattern-card.ebayui-dne-item-pattern-card-no-padding > .row > .col .item:last-child,
+    .ebayui-dne-featured-with-padding .card.ebayui-dne-item-featured-card--topDeals > h2,
+    .ebayui-dne-featured-with-padding .card.ebayui-dne-item-featured-card--topDeals,
+    .hl-cat-nav,
+    div.sbx-c div.rct-bb,
+    .rct-c,
+    .ebayui-dne-featured-with-padding .ebayui-dne-item-featured-card > .row > .col .dne-itemtile,
+    .gh-sch-prom#gh-gb,
+    .ebayui-dne-banner-text,
+    .gh-sch-prom #gh-gb,
+    .gh-sch-prom.gh-w .gh-divider-l,
+    .gh-ui-6-5.gh-sch-prom.gh-w .gh-divider-l,
+    .gh-w li.gh-divider,
+    .gh-sch-prom.gh-w li.gh-divide,
+    .gh-sch-prom #gh-top,
+    .x-flyout .flyout-notice,
+    .srp-controls__control--legacy,
+    .b-guidance--text .b-guidancecard__link,
+    .fake-tabs.srp-format-tabs,
+    .srp-grid .s-item,
+    .s-item.s-item--large .s-item__wrapper,
+    .whitebg .b-module,
+    .srp-main--isLarge .b-list.srp-grid > .srp-controls {
+        border-color: var(--text-color-dark);
     }
+
     /* ======================== */
     /* === Text color === */
     /* ======================== */
-     li.medium-text.m-tab.selected.m-tab__title.fake-tabs__item > a, a, a:active, a:link, ul#bc a:link, .srp-controls--selected-value, html a:link, .g-novisited a:visited {
-         color: var(--text-color-anchor);
+    li.medium-text.m-tab.selected.m-tab__title.fake-tabs__item > a,
+    a,
+    a:active,
+    a:link,
+    ul#bc a:link,
+    .srp-controls--selected-value,
+    html a:link,
+    .g-novisited a:visited {
+        color: var(--text-color-anchor);
     }
-     section.m-links-accordion > ul > li > a, ul.secondary.show > li > a, .mbg a:link, .fol-widget > a{
-         color: var(--text-color-anchor) !important;
-         filter: brightness(90%);
+
+    section.m-links-accordion > ul > li > a,
+    ul.secondary.show > li > a,
+    .mbg a:link,
+    .fol-widget > a {
+        color: var(--text-color-anchor) !important;
+        filter: brightness(90%);
     }
-     .signin-link:active, .signin-link:visited, .signin-link:link, .signout-banner-text {
-         color: var(--section-highlight-lightgreen);
+
+    .signin-link:active,
+    .signin-link:visited,
+    .signin-link:link,
+    .signout-banner-text {
+        color: var(--section-highlight-lightgreen);
     }
-     .merch-placements-container *, .container-item-col__info-tertiary.container-item-col__info-displayPrice > div > span.BOLD, .container-item-col__info-item-info-primary.container-item-col__info-item-info-title > div > a, button, a.nav-link, .leftNavBar > ul li a, .pgCenter div, .gh-eb-li-a, .leftNavBar > ul li, .gh-ui-6-5 #gh-eb a {
-         color: var(--text-color) !important;
+
+    .merch-placements-container *,
+    .container-item-col__info-tertiary.container-item-col__info-displayPrice > div > span.BOLD,
+    .container-item-col__info-item-info-primary.container-item-col__info-item-info-title > div > a,
+    button,
+    a.nav-link,
+    .leftNavBar > ul li a,
+    .pgCenter div,
+    .gh-eb-li-a,
+    .leftNavBar > ul li,
+    .gh-ui-6-5 #gh-eb a {
+        color: var(--text-color) !important;
     }
+
     /* #555 */
-     a.vi-ds3-ter-a, a.vi-ds3-ter-a:hover, a.vi-ds3-ter-a:visited, a.vi-ds3-ter-a:link, .vi-covRow a, .vi-covRow a:hover, .vi-covRow a:visited, .vi-covRow a:hover, .sh-DlvryDtl, #gh .btn.btn-ter, .itemAttr, html body, .hl-cat-nav li a, .ebayui-dne-item-pattern-card .dne-pattern-title, li.fake-tabs__item > a, #domain-nav, #gh-sbc a, .ghfe-ds6, .my-ebay .menu-list a, body #CenterPanel div.actPanel div.convPrice, body #CenterPanel div.actPanel div.convPrice span, .gh-info {
-         color: var(--text-color);
+    a.vi-ds3-ter-a,
+    a.vi-ds3-ter-a:hover,
+    a.vi-ds3-ter-a:visited,
+    a.vi-ds3-ter-a:link,
+    .vi-covRow a,
+    .vi-covRow a:hover,
+    .vi-covRow a:visited,
+    .vi-covRow a:hover,
+    .sh-DlvryDtl,
+    #gh .btn.btn-ter,
+    .itemAttr,
+    html body,
+    .hl-cat-nav li a,
+    .ebayui-dne-item-pattern-card .dne-pattern-title,
+    li.fake-tabs__item > a,
+    #domain-nav,
+    #gh-sbc a,
+    .ghfe-ds6,
+    .my-ebay .menu-list a,
+    body #CenterPanel div.actPanel div.convPrice,
+    body #CenterPanel div.actPanel div.convPrice span,
+    .gh-info {
+        color: var(--text-color);
     }
+
     /* #666 */
-     .iti-eu-label, .b-breadcrumb__text, .gf-if-a, .iti-eu-bld-gry{
-         color: var(--text-color);
-         filter: brightness(110%);
+    .iti-eu-label,
+    .b-breadcrumb__text,
+    .gf-if-a,
+    .iti-eu-bld-gry {
+        color: var(--text-color);
+        filter: brightness(110%);
     }
+
     /* #333 */
-     .page-title > h1, h1, h2, h3, h4, h5, .cont, .dne-show-less.dne-itemtile .dne-show-more-link > a, .dne-show-more.dne-itemtile .dne-show-more-link > a, .condText, .dne-itemtile-detail .dne-itemtile-original-price .itemtile-price-bold, .dne-itemtile-detail > a > .dne-itemtile-title, .dne-itemtile-detail .dne-itemtile-price span, #gh-sbc h3, #gh-sbc h3 a, .gh-w, .it-ttl, .sh-title, .si-ttl, .vi-swc-title h2, .ebayui-dne-banner-text > h2, .vi-swc-header, .cusr-serv .rowItem .columnItem .footNote, .b-info__pricerange, .b-info__price, .b-info__trendprice, .b-info__title, .hl-cat-nav__flyout li a:hover, .pgHeading > h1, .vi-hd-ops #CenterPanel .ap-numWatcher.ap-watchCount-hot *, .vi-hd-ops #CenterPanel .vi-qtyS-hot, .vi-hd-ops #CenterPanel span.vi-qtyS-hot a, .vi-hd-ops #CenterPanel .vi-qtyA-hot, .vi-hd-ops #CenterPanel .topinfo a.vi-bidC-hot *, .vi-hd-ops #CenterPanel .topinfo a.vi-bidC-hot:hover, .hl-cat-nav__active span, .hl-cat-nav__flyout h4, .topTitle h1, .sh-svc, .w2b-subhead, .b-guidancecard__title, .srp-main--isLarge .fake-tabs.srp-format-tabs li.fake-tabs__item--current .srp-format-tabs-h2, .vi-hd-ops .mm-as, .vi-hd-ops .vi-eu-region .mm-as, .vi-hd-ops .ebaylocale_en_GB .mm-as, .pagecontainer__leftnav .b-categorynavigations .b-textlink, .pagecontainer__leftnav .b-speciallinks .b-textlink, .b-title, .skin-large .b-breadcrumb ol li a, .mm-op, #gh-un, .gh-item-bold {
-         color: var(--text-color-light);
+    .page-title > h1,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    .cont,
+    .dne-show-less.dne-itemtile .dne-show-more-link > a,
+    .dne-show-more.dne-itemtile .dne-show-more-link > a,
+    .condText,
+    .dne-itemtile-detail .dne-itemtile-original-price .itemtile-price-bold,
+    .dne-itemtile-detail > a > .dne-itemtile-title,
+    .dne-itemtile-detail .dne-itemtile-price span,
+    #gh-sbc h3,
+    #gh-sbc h3 a,
+    .gh-w,
+    .it-ttl,
+    .sh-title,
+    .si-ttl,
+    .vi-swc-title h2,
+    .ebayui-dne-banner-text > h2,
+    .vi-swc-header,
+    .cusr-serv .rowItem .columnItem .footNote,
+    .b-info__pricerange,
+    .b-info__price,
+    .b-info__trendprice,
+    .b-info__title,
+    .hl-cat-nav__flyout li a:hover,
+    .pgHeading > h1,
+    .vi-hd-ops #CenterPanel .ap-numWatcher.ap-watchCount-hot *,
+    .vi-hd-ops #CenterPanel .vi-qtyS-hot,
+    .vi-hd-ops #CenterPanel span.vi-qtyS-hot a,
+    .vi-hd-ops #CenterPanel .vi-qtyA-hot,
+    .vi-hd-ops #CenterPanel .topinfo a.vi-bidC-hot *,
+    .vi-hd-ops #CenterPanel .topinfo a.vi-bidC-hot:hover,
+    .hl-cat-nav__active span,
+    .hl-cat-nav__flyout h4,
+    .topTitle h1,
+    .sh-svc,
+    .w2b-subhead,
+    .b-guidancecard__title,
+    .srp-main--isLarge .fake-tabs.srp-format-tabs li.fake-tabs__item--current .srp-format-tabs-h2,
+    .vi-hd-ops .mm-as,
+    .vi-hd-ops .vi-eu-region .mm-as,
+    .vi-hd-ops .ebaylocale_en_GB .mm-as,
+    .pagecontainer__leftnav .b-categorynavigations .b-textlink,
+    .pagecontainer__leftnav .b-speciallinks .b-textlink,
+    .b-title,
+    .skin-large .b-breadcrumb ol li a,
+    .mm-op,
+    #gh-un,
+    .gh-item-bold {
+        color: var(--text-color-light);
     }
-     span.ux-textspans.ux-textspans--BOLD, h2.fdbk-detail-list__title, h2.fdbk-seller-rating__title, #gh-eb-u-o #gh-uid {
-         color: var(--text-color-light) !important;
+
+    span.ux-textspans.ux-textspans--BOLD,
+    h2.fdbk-detail-list__title,
+    h2.fdbk-seller-rating__title,
+    #gh-eb-u-o #gh-uid {
+        color: var(--text-color-light);
     }
-     .cusr-serv .article_main_container .article_main p, body #CenterPanel .actPanel .vi-price span, body #CenterPanel .actPanel .mm-dp div *{
-         color: var(--text-color-white);
+
+    .cusr-serv .article_main_container .article_main p,
+    body #CenterPanel .actPanel .vi-price span,
+    body #CenterPanel .actPanel .mm-dp div * {
+        color: var(--text-color-white);
     }
+
     /* ======================== */
     /* === Invert color === */
     /* ======================== */
-     .gh-sch-prom#gh .btn.btn-ter:hover, .gh-sch-prom#gh .btn.btn-prim:hover, button.btn--primary:focus, a.fake-btn--primary:focus, button.btn--primary:hover, a.fake-btn--primary:hover, button.btn--primary:active, a.fake-btn--primary:active, button.btn--primary[disabled]:hover, button.btn--primary[aria-disabled="true"]:hover, button.btn--primary[disabled]:focus, button.btn--primary[aria-disabled="true"]:focus {
-         filter: brightness(120%);
+    .gh-sch-prom#gh .btn.btn-ter:hover,
+    .gh-sch-prom#gh .btn.btn-prim:hover,
+    button.btn--primary:focus,
+    a.fake-btn--primary:focus,
+    button.btn--primary:hover,
+    a.fake-btn--primary:hover,
+    button.btn--primary:active,
+    a.fake-btn--primary:active,
+    button.btn--primary[disabled]:hover,
+    button.btn--primary[aria-disabled="true"]:hover,
+    button.btn--primary[disabled]:focus,
+    button.btn--primary[aria-disabled="true"]:focus {
+        filter: brightness(120%);
     }
-     ul.l-adv li a, .cusr-serv .rowItem .columnItem .columnHead{
-         filter: brightness(200%);
+
+    ul.l-adv li a,
+    .cusr-serv .rowItem .columnItem .columnHead {
+        filter: brightness(200%);
     }
-     .textbox__icon, .dne-itemtile-detail .dne-itemcard-ebayplus img, .content-heading--font, ul.l-adv li a:hover, .cusr-serv .rowItem .columnItem .content, .srp-view-options .btn:hover, .srp-view-options button[type].btn:hover, .srp-main--isLarge .srp-sort .btn:hover, .shipto .flag-wrapper .flag-country-name, gh-shipto-label span, .shipto__notice .inline-notice__content, .brm-pill.brm-pill--applied, .brm .brm__flyout .x-flyout__button, .s-item__watchheart-text--watching svg, .s-item__watchheart-text--watch svg, .s-item__title, .s-item__price, .is .lable, .sh-sch-ng .schbox-label, .item-tile .item-info .item-info__title, .item-tile .item-info .item-info__price, .hl-item__displayPrice, button.btn--secondary, a.fake-btn--secondary, .heading, .gh-ui-6-5 .gh-cart-icon, .gh-ui-6-5 #gh-Alerts-i {
-         filter: invert(1);
+
+    .textbox__icon,
+    .dne-itemtile-detail .dne-itemcard-ebayplus img,
+    .content-heading--font,
+    ul.l-adv li a:hover,
+    .cusr-serv .rowItem .columnItem .content,
+    .srp-view-options .btn:hover,
+    .srp-view-options button[type].btn:hover,
+    .srp-main--isLarge .srp-sort .btn:hover,
+    .shipto .flag-wrapper .flag-country-name,
+    gh-shipto-label span,
+    .shipto__notice .inline-notice__content,
+    .brm-pill.brm-pill--applied,
+    .brm .brm__flyout .x-flyout__button,
+    .s-item__watchheart-text--watching svg,
+    .s-item__watchheart-text--watch svg,
+    .s-item__title,
+    .s-item__price,
+    .is .lable,
+    .sh-sch-ng .schbox-label,
+    .item-tile .item-info .item-info__title,
+    .item-tile .item-info .item-info__price,
+    .hl-item__displayPrice,
+    button.btn--secondary,
+    a.fake-btn--secondary,
+    .heading,
+    .gh-ui-6-5 .gh-cart-icon,
+    .gh-ui-6-5 #gh-Alerts-i {
+        filter: invert(1);
     }
-     
-     
-     
+
+
+
     /* ======================================= */
     /* === Below this was added by LostFox === */
     /* ===---------------------------------=== */
@@ -154,194 +500,681 @@
     /* == pages, I found what the previous  == */
     /* == style missed and added those.     == */
     /* ======================================= */
-     
-     
-     
-     section.section-notice.section-notice--information.s-message {
-         background-color: hsl(200, 9%, 20%);
+    section.section-notice.section-notice--information.s-message {
+        background-color: hsl(200, 9%, 20%);
     }
-     .srp-river-results .clearfix {
-         background-color: #18181b;
+
+    .srp-river-results .clearfix {
+        background-color: #18181b;
     }
-     a.s-item__link {
-         background-color: #252527;
-         border: 1px;
-         border-radius: 10px;
+
+    a.s-item__link {
+        background-color: #252527;
+        border: 1px;
+        border-radius: 10px;
     }
-     .s-item__title {
-         margin: 8px;
-         line-height: 16px;
+
+    .s-item__title {
+        margin: 8px;
+        line-height: 16px;
     }
-     .srp-list .s-item {
-         border-bottom: 1px solid #11117ee0 !important;
+
+    .srp-list .s-item {
+        border-bottom: 1px solid #11117ee0 !important;
     }
-     div.s-item__image-wrapper.image-treatment {
-         background-color: #272525f5;
+
+    div.s-item__image-wrapper.image-treatment {
+        background-color: #272525f5;
     }
-     .srp-river {
-         background-color: transparent;
-         border: solid 10px green;
+
+    .srp-river {
+        background-color: transparent;
+        border: solid 10px green;
     }
-     .srp-main--isLarge .srp-river {
-         border: 2px solid #7a7777;
-         border-top: solid 0px;
+
+    .srp-main--isLarge .srp-river {
+        border: 2px solid #7a7777;
+        border-top: solid 0px;
     }
-     .x-refine__select__svg {
-         background-color: #494646;
-         padding: 2px;
-         border: 1px;
-         border-radius: 5px;
+
+    .x-refine__select__svg {
+        background-color: #494646;
+        padding: 2px;
+        border: 1px;
+        border-radius: 5px;
     }
-     span.checkbox__icon {
-         margin: 1px;
+
+    span.checkbox__icon {
+        margin: 1px;
     }
-     span.x-refine__multi-select-histogram {
-         color: #b5b4b4;
-         margin-right: 3px;
-         margin-left: 5px;
-         line-height: 15px;
+
+    span.x-refine__multi-select-histogram {
+        color: #b5b4b4;
+        margin-right: 3px;
+        margin-left: 5px;
+        line-height: 15px;
     }
-     .x-refine__group .x-refine__multi-select-cbx {
-         color: #dbd3d3;
-         padding-bottom: 10px;
+
+    .x-refine__group .x-refine__multi-select-cbx {
+        color: #dbd3d3;
+        padding-bottom: 10px;
     }
-     span.cbx.x-refine__multi-select-cbx {
-         padding-bottom: 2px;
+
+    span.cbx.x-refine__multi-select-cbx {
+        padding-bottom: 2px;
     }
-     .srp-include-description {
-         background-color: #494646;
-         border: 1px;
-         border-radius: 4px;
-         padding: 3px;
+
+    .srp-include-description {
+        background-color: #494646;
+        border: 1px;
+        border-radius: 4px;
+        padding: 3px;
     }
-     .srp-related-searches {
-         padding-top: 6px;
-         padding-bottom: 5px;
+
+    .srp-related-searches {
+        padding-top: 6px;
+        padding-bottom: 5px;
     }
-     a.s-item__link {
-         display: flex;
+
+    a.s-item__link {
+        display: flex;
     }
-     .s-answer-region-center-top .srp-controls {
-         border: solid 2px #7a7777;
-         border-bottom: solid 0px;
-         border-radius: 10px 10px 0px 0px;
+
+    .s-answer-region-center-top .srp-controls {
+        border: solid 2px #7a7777;
+        border-bottom: solid 0px;
+        border-radius: 10px 10px 0px 0px;
     }
-     li.srp-river-answer.srp-river-answer--NAVIGATION_ANSWER_COLLAPSIBLE_CAROUSEL {
-         border-top: solid 0px;
-         border-bottom: solid 0px;
+
+    li.srp-river-answer.srp-river-answer--NAVIGATION_ANSWER_COLLAPSIBLE_CAROUSEL {
+        border-top: solid 0px;
+        border-bottom: solid 0px;
     }
-     .srp-controls__sort .srp-controls__control {
-         border: solid 2px #827f7f;
-         border-radius: 5px;
+
+    .srp-controls__sort .srp-controls__control {
+        border: solid 2px #827f7f;
+        border-radius: 5px;
     }
-     label.srp-controls__sort-label {
-         color: white !important;
+
+    label.srp-controls__sort-label {
+        color: white !important;
     }
-     button.fake-menu-button__button.btn.btn--secondary {
-         border:solid 0px transparent !important;
-         border-radius: 6px;
+
+    /* button.fake-menu-button__button.btn.btn--secondary {
+        border: solid 0px transparent !important;
+        border-radius: 6px;
+    } */
+
+    .btn__cell > .icon.icon--filter-list-small,
+    .btn__cell > .icon.icon--dropdown {
+        filter: invert(1);
     }
-     .btn__cell > .icon.icon--filter-list-small, .btn__cell > .icon.icon--dropdown {
-         filter: invert(1);
+
+    .checkbox__icon > .checkbox__unchecked,
+    .checkbox__icon > .checkbox__checked {
+        filter: invert(1);
     }
-     .checkbox__icon > .checkbox__unchecked, .checkbox__icon > .checkbox__checked {
-         filter: invert(1);
+
+    ul.fake-tabs__items > li.fake-tabs__item.btn.fake-tabs__item--current {
+        border-radius: 10px 0px 0px 10px;
     }
-     ul.fake-tabs__items > li.fake-tabs__item.btn.fake-tabs__item--current {
-         border-radius: 10px 0px 0px 10px;
+
+    .fake-tabs.srp-format-tabs.srp-controls__control > ul.fake-tabs__items {
+        background-color: transparent;
     }
-     .fake-tabs.srp-format-tabs.srp-controls__control > ul.fake-tabs__items {
-         background-color: transparent;
+
+    ul.fake-tabs__items > li.fake-tabs__item.btn {
+        background-color: #6b6b6b;
+        transition: background-color .2s ease-in;
     }
-     ul.fake-tabs__items > li.fake-tabs__item.btn {
-         background-color: #6b6b6b;
-         transition: background-color .2s ease-in;
+
+    .srp-controls .srp-format-tabs.fake-tabs .fake-tabs__items .srp-format-tabs-h2 {
+        color: white;
     }
-     .srp-controls .srp-format-tabs.fake-tabs .fake-tabs__items .srp-format-tabs-h2 {
-         color: white;
+
+    .srp-controls .srp-format-tabs.fake-tabs .fake-tabs__items .btn {
+        border-color: transparent;
     }
-     .srp-controls .srp-format-tabs.fake-tabs .fake-tabs__items .btn {
-         border-color: transparent;
+
+    .srp-controls .srp-format-tabs.fake-tabs .fake-tabs__items .fake-tabs__item--current {
+        border-color: transparent;
     }
-     .srp-controls .srp-format-tabs.fake-tabs .fake-tabs__items .fake-tabs__item--current {
-         border-color: transparent;
+
+    ul.fake-tabs__items > li.fake-tabs__item.btn:hover {
+        background-color: #567df3;
     }
-     ul.fake-tabs__items > li.fake-tabs__item.btn:hover {
-         background-color: #567df3;
+
+    ul.fake-tabs__items > li.fake-tabs__item.btn:last-of-type {
+        border-radius: 0px 10px 10px 0px;
     }
-     ul.fake-tabs__items > li.fake-tabs__item.btn:last-of-type {
-         border-radius: 0px 10px 10px 0px;
+
+    span.btn__cell > svg.icon.icon--dropdown use {
+        filter: invert(1);
     }
-     span.btn__cell > svg.icon.icon--dropdown use {
-         filter: invert(1);
+
+    .carousel__viewport {
+        border-bottom: solid 1px white;
     }
-     .carousel__viewport {
-         border-bottom: solid 1px white;
+
+    .srp-controls__resize-display {
+        margin-left: 1em;
     }
-     .srp-controls__resize-display {
-         margin-left: 1em;
+
+    .srp-controls .filter-menu-button.filter-menu-control.srp-controls__control--flyout button {
+        background: #575a5e;
+        border-color: transparent;
+        border-radius: 8px;
+        padding: 0px 5px 0px 5px;
     }
-     .srp-controls .filter-menu-button.filter-menu-control.srp-controls__control--flyout button {
-         background: #575a5e;
-         border-color: transparent;
-         border-radius: 8px;
-         padding: 0px 5px 0px 5px;
+
+    .srp-controls .filter-menu-button.filter-menu-control.srp-controls__control--flyout {
+        border-color: transparent;
     }
-     .srp-controls .filter-menu-button.filter-menu-control.srp-controls__control--flyout {
-         border-color: transparent;
+
+    .filter-menu-button__button-cell {
+        filter: invert(1);
     }
-     .filter-menu-button__button-cell {
-         filter: invert(1);
+
+    span.filter-menu-button__menu,
+    span.fake-menu-button__menu.fake-menu-button__menu--reverse {
+        filter: invert(0.85);
     }
-     span.filter-menu-button__menu, span.fake-menu-button__menu.fake-menu-button__menu--reverse {
-         filter: invert(0.85);
+
+    .s-zipcode-entry .fake-link {
+        background-color: #e0e0e0 !important;
+        padding: 0px 5px !important;
     }
-     .s-zipcode-entry .fake-link {
-         background-color: #e0e0e0 !important;
-         padding: 0px 5px !important;
+
+    .lightbox-dialog__window.lightbox-dialog__window--fade.keyboard-trap--active {
+        background-color: var(--theme-color);
     }
-     .lightbox-dialog__window.lightbox-dialog__window--fade.keyboard-trap--active {
-         background-color: var(--theme-color);
+
+    span.select {
+        filter: invert(1);
     }
-     span.select {
-         filter: invert(1);
+
+    .x-refine__text-list__container.chevron-container,
+    .icon-btn.lightbox-dialog__close,
+    button.pagination__previous,
+    a.pagination__next,
+    a.pagination__previous,
+    button.pagination__next {
+        filter: invert(0.85);
+        left: 5px;
     }
-     .x-refine__text-list__container.chevron-container, .icon-btn.lightbox-dialog__close, button.pagination__previous, a.pagination__next, a.pagination__previous, button.pagination__next {
-         filter: invert(0.85);
-         left: 5px;
+
+    span.select > svg.icon.icon--dropdown {
+        right: 5px;
     }
-     span.select > svg.icon.icon--dropdown {
-         right: 5px;
+
+    li.carousel__snap-point.srp-carousel-list__item.srp-carousel-list__item--group-has-title > div > a.srp-carousel-list__item-link,
+    li.carousel__snap-point.srp-carousel-list__item > div > a.srp-carousel-list__item-link > div {
+        background: #575a5e;
+        color: white;
+        transition: background .3s ease-in-out;
     }
-     li.carousel__snap-point.srp-carousel-list__item.srp-carousel-list__item--group-has-title > div > a.srp-carousel-list__item-link, li.carousel__snap-point.srp-carousel-list__item > div > a.srp-carousel-list__item-link > div {
-         background: #575a5e;
-         color: white;
-         transition: background .3s ease-in-out;
+
+    li.carousel__snap-point.srp-carousel-list__item.srp-carousel-list__item--group-has-title > div > a.srp-carousel-list__item-link:hover {
+        background: #567df3;
     }
-     li.carousel__snap-point.srp-carousel-list__item.srp-carousel-list__item--group-has-title > div > a.srp-carousel-list__item-link:hover {
-         background: #567df3;
-     }
-     .srp-controls__control.srp-view-options > span > span.fake-menu-button > button.fake-menu-button__button.btn.btn--secondary {
-         background: #a4a4a4;
+
+    .srp-controls__control.srp-view-options > span > span.fake-menu-button > button.fake-menu-button__button.btn.btn--secondary {
+        background: #a4a4a4;
     }
-     input#gh-ac.gh-tb.ui-autocomplete-input, select#gh-cat.gh-sb {
-         color: #b9b9b9;
-     }
-     svg.icon.icon--search {
-         filter: invert(0.6);
-     }
-     .gh-minicart-footer, .gh-minicart-header *, .gh-info__title {
-         background-color: var(--theme-color);
-         color: white;
-         border: transparent;
-     }
-     div#ghno > ul.ghno__list *, div#ghno > div.ghno__empty-notif-hidden * {
-         background: var(--theme-color);
-     }
-     div.srp-refinements-guidance.srp-refinements-guidance--gray-pills > h2.srp-answer__title {
-         color: var(--text-color);
-     }
-     body.vi-bb-flex {
+
+    input#gh-ac.gh-tb.ui-autocomplete-input,
+    select#gh-cat.gh-sb {
+        color: #b9b9b9;
+    }
+
+    svg.icon.icon--search {
+        filter: invert(0.6);
+    }
+
+    .gh-minicart-footer,
+    .gh-minicart-header *,
+    .gh-info__title {
+        background-color: var(--theme-color);
+        color: white;
+        border: transparent;
+    }
+
+    div#ghno > ul.ghno__list *,
+    div#ghno > div.ghno__empty-notif-hidden * {
+        background: var(--theme-color);
+    }
+
+    div.srp-refinements-guidance.srp-refinements-guidance--gray-pills > h2.srp-answer__title {
+        color: var(--text-color);
+    }
+
+    body.vi-bb-flex {
         background: var(--theme-color) !important;
-     }
+    }
+    
+    #header > div.page-header-action-box > button > svg.icon{
+        filter: brightness(0) saturate(100%);
+    }
+    .desktop .eui-textual-display--action .PSEUDOLINK, .desktop .eui-textual-display--action .PSEUDOLINK:active, .desktop .eui-textual-display--action .PSEUDOLINK:hover, .desktop .eui-textual-display--action .PSEUDOLINK:visited, .desktop .eui-textual-display--action a, .desktop .eui-textual-display--action a:active, .desktop .eui-textual-display--action a:hover, .desktop .eui-textual-display--action a:visited{
+        color: white;
+    }
+    
+    .desktop #header .printer-friendly-button{
+        color: black !important;
+    }
+    .gh-ui-6-5 .gh-rvi-chevron{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(80%) saturate(2%) hue-rotate(166deg) brightness(111%) contrast(101%);
+    }
+    .gh-ui-6-5 #gh-shop-ei{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(80%) saturate(2%) hue-rotate(166deg) brightness(111%) contrast(101%);
+    }
+    .gh-ui-6-5 .gh-eb-arw{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(80%) saturate(2%) hue-rotate(166deg) brightness(111%) contrast(101%);
+    }
+    .item-card .item-title .eui-text-span span{
+        color: white;
+    }
+    .desktop .card .card-content-box .card-content-description-box .card-content-actions .primary-actions .primary-action a{
+        color: white;
+        font-weight: bold;
+    }
+    .desktop .card .card-content-box .card-content-description-box .card-content-actions .secondary-action button{
+        color: black !important;
+    }
+    .desktop-modal .modal-title-bar {
+        background-color: #18181B;
+    }
+    .desktop-modal .modal-content{
+        background-color: #18181B;
+    }
+    .tracking-module .top-container{
+        background-color: #18181B;
+    }
+    .progress-stepper__item[aria-current] .progress-stepper__text h2, .progress-stepper__item[aria-current] .progress-stepper__text h3, .progress-stepper__item[aria-current] .progress-stepper__text h4, .progress-stepper__item[aria-current] .progress-stepper__text h5, .progress-stepper__item[aria-current] .progress-stepper__text h6{
+        color: white;
+    }
+    .main-summary{
+        color: white;
+    }
+    .tracking-details .title-container{
+        color: #c5c5c5;
+    }
+    .tracking-event--data, .tracking-event--description{
+        color: #c5c5c5;
+    }
+    .edd-container{
+        background-color: #858585;
+    }
+    .hl-cat-nav .saved:before{
+        filter: brightness(0) saturate(100%) invert(52%) sepia(68%) saturate(5797%) hue-rotate(324deg) brightness(98%) contrast(96%);
+    }
+    body.vi-bb-flex.vi-rounded-btns #CenterPanelDF .vi-flex-cta .btn {
+        border-radius: 20px;
+        background-color: #18181B;
+    }
+    .vim.d-statusmessage .ux-layout-section--INFO {
+        background-color: #088ef3;
+    }
+    .ux-timer__time-left {
+        color: #696969;
+        font-weight: bold;
+    }
+    .vim.x-wtb-signals .ux-section-module{
+        background: #333338;
+    }
+    #bc > li:nth-child(1) > div > a > span:nth-child(2){
+        color: #088EF3;
+    }
+    #bc > li.vim-breadcrumb > div > div.d-breadcrumb__header > span:nth-child(2){
+        color: white;
+    }
+    .vim.x-watch-action .watching{
+        background-color: transparent !important;
+    }
+    #readMoreDesc > div > div > div.ux-layout-section.ux-layout-section--sellerLegalText.ux-layout-section--PADDING-BOTTOM > div > div > div > span{
+        color: white;
+        font-weight: bolder;
+    }
+    #LISTING_FRAME_MODULE > div > div.d-stores-info-categories__container > div.d-stores-info-categories__container__action > a.d-stores-info-categories__container__action__contact.fake-btn.fake-btn--secondary{
+        background-color: transparent;
+    }
+    #LISTING_FRAME_MODULE > div > div.d-stores-info-categories__feedback-list-wrapper > div > div.fdbk-detail-list__btn-container > a{
+        background-color: transparent;
+    }
+    .vim.x-msku .x-msku__box-cont select.x-msku__select-box{
+        color: white;
+    }
+    .vim.x-msku .x-msku__box-cont select.x-msku__select-box option:disabled {
+        color: #585858;
+    }
+    #mainContent > form > div.nonActPanel > div:nth-child(1) > div > div.x-item-condition-label > span{
+        color: white;
+    }
+    .progress-stepper__text>:first-child{
+        color: white;
+    }
+    .payment-instrument-icon{
+        background: white;
+    }
+    .vim.x-msku .x-msku__label-text{
+        color: white;
+    }
+    .vim.d-quantity .d-quantity__label{
+        color: white;
+    }
+    .ux-textspans--EMPHASIS {
+        color: #dd1e31 !important;
+    }
+    .vim.d-watchlist-link .ux-section-module .ux-textspans--EMPHASIS.ux-textspans--BOLD{
+        color: white !important;
+    }
+    #mainContent > form > div.nonActPanel > div:nth-child(3) > div:nth-child(1) > div > div.d-quantity__availability > div > span:nth-child(3){
+        color: white;
+    }
+    #mainContent > form > div.nonActPanel > div:nth-child(3) > div:nth-child(1) > div > div.d-quantity__availability > div > span:nth-child(2){
+        color: white;
+    }
+    .vas-field .vas-field-item .vas-field-item-label button .ux-textspans--PSEUDOLINK{
+        color: white;
+    }
+    #readMoreDesc > div > div > div.ux-layout-section.ux-layout-section--itemId.ux-layout-section--ALIGN-RIGHT > div > div > div > span.ux-textspans.ux-textspans--BOLD{
+        color: grey;
+    }
+    #readMoreDesc > div > div > div.ux-layout-section.ux-layout-section--revisionHistory.ux-layout-section--PADDING-TOP > div > div > div > span:nth-child(2){
+        color: grey;
+    }
+    #readMoreDesc > div > div > div.ux-layout-section.ux-layout-section--revisionHistory.ux-layout-section--PADDING-TOP > div > div > div > a > span{
+        color: grey;
+    }
+    #LISTING_FRAME_MODULE > div > div.d-stores-info-categories__container > div.d-stores-info-categories__container__info > div > div.d-stores-info-categories__container__info__section__title > a > span{
+        color: white;
+    }
+    .progress-bar{
+        color: white !important;
+        accent-color: white;
+        background: white !important;
+    }
+    #LISTING_FRAME_MODULE > div > div.d-stores-info-categories__details-container > div.d-stores-info-categories__details-category-container > div.d-stores-info-categories__category > div.d-stores-info-categories__category__title > h3 > span{
+        color: white;
+    }
+    .vim.d-stores-info-categories .d-stores-info-categories__category__show__text__pill a, .vim.d-stores-info-categories .d-stores-info-categories__category__show__text__pill a:link, .vim.d-stores-info-categories .d-stores-info-categories__category__show__text__pill a:visited{
+        color: white;
+    }
+    #SRPSection > div:nth-child(1) > div > div > div > div > div:nth-child(1) > div > div > div.ux-labels-values__values.col-9 > div > div:nth-child(1) > a > span{
+        color: #0077ff;
+    }
+    .vim.x-returns-minview a {
+        color: #0077ff;
+    }
+    .vim.d-quantity .d-quantity__availability {
+        color: white;
+    }
+    #vi-atl-lnk-99 > button:not(:hover) > span > svg > use{
+        color: #088EF3 !important;
+    }
+    #vi-atl-lnk-99 > button:hover > span > svg > use{
+        color: #aaa !important;
+    }
+    #SRPSection > div:nth-child(1) > div > div > div > div > div:nth-child(2) > div > div > div > div.ux-labels-values__values.col-9 > div > div > span.ux-textspans.ux-textspans__custom-view > span{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(64deg) brightness(103%) contrast(101%);
+    }
+    .listGroup--primary{
+        background-color: #18181B;
+    }
+    .listMultilineTextInput__container span[contenteditable]{
+        color: white;
+        background-color: #18181B;
+    }
+    [data-view-placeholder] h2+p{
+        color: grey;
+    }
+    [data-view-placeholder] p{
+        color: grey;
+    }
+    [data-key="ATTRIBUTES_DIY_VIEW"] label{
+        color: grey;
+    }
+    .uploader-previewGrid__editor--upload-buttonsContainer button[type="button"]{
+        color: black !important;
+    }
+    .listInlineSelect__selectBox--button{
+        color: white;
+        background-color: #18181B;
+    }
+    [data-key="PRICE_VIEW"] [data-key="auctionSelection"] label, [data-key="PRICE_VIEW"] [data-key="binPriceSelection"] label{
+        color: white;
+    }
+    [data-key="PRICE_VIEW"] [data-key="PRICE_DETAIL_VIEW"] .grid__cell:nth-child(5) .grid__cell__wrapper, [data-key="PRICE_VIEW"] [data-key="PRICE_DETAIL_VIEW"] .grid__cell:nth-child(3) .grid__cell__wrapper{
+        background: #18181B;
+    }
+    [data-key="PRICE_VIEW"] [data-key="auctionDiyPriceGroupNew"], [data-key="PRICE_VIEW"] [data-key="binDiyPriceGroupNew"]{
+        background-color: #18181B;
+    }
+    [data-key="PRICE_VIEW"] [data-key="auctionDiyPriceGroupNew"] .listTextInput label, [data-key="PRICE_VIEW"] [data-key="binDiyPriceGroupNew"] .listTextInput label{
+        color: grey;
+    }
+    [data-key="PRICE_VIEW"] [data-key="auctionDiyPriceGroupNew"] .listTextInput label ~ div.inputField__description, [data-key="PRICE_VIEW"] [data-key="binDiyPriceGroupNew"] .listTextInput label ~ div.inputField__description{
+        color: #494949;
+    }
+    .listTextInput__container input{
+        background-color: #18181B;
+    }
+    [data-key="SHIP_RECO_WT_DIM_GROUP"], [data-key="SHIP_RESTRICTED_WT_DIM_GROUP"], [data-key="SHIP_PRIMARY_SERVICE_RESTRICTED"], [data-key="SHIP_INTL_SERVICE_EIS_RESTRICTED"], [data-key="SHIP_SECONDARY_SERVICE_RESTRICTED"], [data-key="SHIP_INTL_SERVICE_RESTRICTED"], [data-key="SHIP_INTL_SEC_SERVICE_RESTRICTED"], [data-key="SHIP_PRIMARY_RESTRICTED_COST"], [data-key="SHIP_SECONDARY_RESTRICTED_COST"], [data-key="SHIP_INTL_RESTRICTED_COST"], [data-key="SHIP_INTL_SEC_RESTRICTED_COST"]{
+        color: white;
+    }
+    [data-key="SHIP_SERVICE_RECO"]{
+        background-color: #18181B;
+    }
+    #wc0-w0-LIST_PAGE_WRAPPER__-SHIP_VIEW__-SHIP_GRID_VIEW_PRIMARY_WRAPPER__-SHIP_GRID_VIEW_PRIMARY__-SHIP_DIY_SERVICES_GROUP__-SHIP_PRIMARY_SERVICES_COST__-w1-SHIP_RECO_COST__-shippingRecommendationTipContent__{
+        background-color: #18181B;
+    }
+    [data-key="STICKY_PREFERENCES"]{
+        color: white;
+    }
+    [data-key="STICKY_PREFERENCES"] [data-key="changePreferencesCallToAction"]{
+        color: #0077ff !important;
+    }
+    [data-key="CHARITY"] label{
+        color: white;
+    }
+    button[data-type="DEFAULT"]{
+        background-color: #18181B;
+    }
+    .listRte__editorToolbar{
+        background-color: #18181B;
+    }
+    .listRte__editorToolbar button{
+        color: white !important;
+    }
+    .listRte__editorToolbar select{
+        color: white;
+        background-color: #2e2e2f;
+    }
+    [data-key="DESCRIPTION"] [data-key="descriptionHint"]{
+        background-color: grey;
+        color: white;
+    }
+    [data-key="DESCRIPTION"] [data-key="descriptionHint"]::before{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(10deg) brightness(103%) contrast(101%);
+    }
+    .boltHeader{
+        background: rgb(24, 24, 27);
+    }
+    .inputField__label{
+        color: white;
+    }
+    [data-key="SHIP_PRIMARY_DIY_COST"] [type="radio"]+label, [data-key="SHIP_SECONDARY_DIY_COST"] [type="radio"]+label, [data-key="SHIP_INTL_DIY_COST"] [type="radio"]+label, [data-key="SHIP_INTL_SEC_DIY_COST"] [type="radio"]+label{
+        color: black;
+    }
+    .pl-footer-plx .pl--basic__controls--btns .btn.btn--secondary{
+        color: var(--color-foreground-accent) !important;
+    }
+    #vi-statusmessage-panel-content > div > div:nth-child(1) > div > div.ux-layout-section-module > div.ux-layout-section.ux-layout-section--itemInfo.ux-layout-section--LISTING{
+        color: white;
+    }
+    span.ux-textspans.ux-textspans--BOLD, h2.fdbk-detail-list__title, h2.fdbk-seller-rating__title, #gh-eb-u-o #gh-uid{
+        color: #292929;
+    }
+    .vim.d-statusmessage .ux-layout-section--WARNING{
+        background-color: #f3bf2a;
+    }
+    .listInlineSelect__menuListOptions li{
+        color: black;
+    }
+    .heroImage__overlay{
+        background: rgba(24, 24, 27, .88);
+    }
+    .heroImage .heroImage__box__content h1{
+        color: white;
+    }
+    .heroImage .heroImage__box__content p{
+        color: white;
+    }
+    #s0-0-21-3-view-success{
+        background-color: #18181B;
+    }
+    .smacwidget .title{
+        color: white;
+    }
+    .survey-tab a{
+        color: white !important;
+    }
+    span.ux-textspans.ux-textspans--BOLD, h2.fdbk-detail-list__title, h2.fdbk-seller-rating__title, #gh-eb-u-o #gh-uid{
+        color: white;
+    }
+    .global-footer{
+        background-color: #18181B;
+    }
+    .meui-item-tile{
+        background-color: #18181B;
+    }
+    .me-item-card-top-bar.primary{
+        background-color: #2f2f33;
+    }
+    .item__inline-cta .fake-menu-button__button{
+        border: 1px solid var(--color-foreground-accent);
+        background-color: #e7e7e4;
+    }
+    .me-carousel__pill{
+        background-color: #18181B;
+    }
+    .left-navigation .list__panel a:hover{
+        color: white;
+    }
+    .left-navigation .list__panel a.active{
+        background-color: #323232;
+        border: 1px solid var(--color-foreground-accent);
+        border-top-right-radius: 48px;
+        border-bottom-right-radius: 48px;
+        color: white;
+    }
+    .app-atc-layer-header-wrapper .vi-overlayTitleBar{
+        background-color: #18181B;
+        color: white;
+    }
+    .app-atc-layer__item-title{
+        color: white;
+    }
+    .similar-items .item-details-title{
+        color: white;
+    }
+    .similar-items .item-price{
+        color: #939393;
+    }
+    .left-navigation .section_header a, .left-navigation .list__header a, .left-navigation .section_header a:visited, .left-navigation .list__header a:visited, .left-navigation .section_header a:hover, .left-navigation .list__header a:hover{
+        color: white;
+    }
+    .left-navigation .list__header::after{
+        color: white;
+    }
+    .m-item .item-title a.title{
+        color: white;
+    }
+    .sticky-header{
+        background-color: #18181B;
+    }
+    .note-label-wrap .note-header__action .m-cta button.expand-btn--borderless{
+        color: black !important;
+    }
+    .m-item--more .m-menu button.menu-button__button{
+        color: black !important;
+    }
+    .menu-button__button[aria-expanded="true"] ~ .menu-button__menu, .fake-menu-button__button[aria-expanded="true"] ~ .fake-menu-button__menu, .menu-button .expand-btn[aria-expanded="true"] ~ .menu-button__menu, .fake-menu-button .expand-btn[aria-expanded="true"] ~ .fake-menu-button__menu, .menu-button .btn[aria-expanded="true"] ~ .menu-button__menu, .fake-menu-button .btn[aria-expanded="true"] ~ .fake-menu-button__menu{
+        background-color: #18181B;
+    }
+    .m-item--more .m-menu .menu-button__menu .menu-button__item a:active, .m-item--more .m-menu .menu-button__menu .menu-button__item a:link{
+        color: white;
+    }
+    .m-product-tour section.section-notice{
+        background-color: #323232;
+    }
+    .fake-menu-button__menu a.fake-menu-button__item, .fake-menu-button__menu button.fake-menu-button__item{
+        color: black !important;
+    }
+    div.menu-button__item[role^="menuitem"]:hover{
+        background-color: black;
+    }
+    a.fake-menu-button__item:hover, a.fake-menu-button__item:visited{
+        color: black !important;
+    }
+    .m-pagination__count-menu-button .fake-menu-button__menu .fake-menu-button__item span{
+        color: black !important;
+    }
+    button.btn--secondary[disabled], button.btn--secondary[aria-disabled="false"]{
+        background-color: #a7e7e7;
+        color: #00ffff !important;
+        border: none !important;
+    }
+    .m-middle-header .menu-button .menu-button__button span{
+        background-color: transparent !important;
+        color: white;
+    }
+    .m-middle-header .menu-button .menu-button__button:hover{
+        background-color: #323232;
+    }
+    .srp-controls .menu-button button.fake-menu-button__button, .srp-controls .fake-menu-button button.fake-menu-button__button{
+        color: black !important;
+    }
+    .srp-refine__category__item[data-state=selected]{
+        color: white;
+        background-color: #323232;
+        border-radius: 10px;
+    }
+    #nid-yke-84 > button > span > svg.icon.icon--filter-list-small > use{
+        color: white;
+    }
+    .srp-sov h2{
+        color: white;
+    }
+    .srp-list .s-item {
+        border-bottom: 1px solid #ffffffe0 !important;
+    }
+    .item__inline-cta .fake-menu-button__button svg.icon:only-child {
+        color: #000;
+    }
+    nav.breadcrumbs .fake-menu-button__button, nav.breadcrumbs .menu-button__button{
+        background-color: transparent;
+    }
+    button.icon-btn:not(:focus-visible), a.icon-link:not(:focus-visible) {
+        background-color: transparent;
+    }
+    button.icon-btn>svg, a.icon-link>svg{
+        fill: white;
+    }
+    .feedback-card-footer a.feedback-card-footer-link, .feedback-card-footer a.feedback-card-footer-link:visited, .feedback-card-footer a.feedback-card-footer-link:hover{
+        color: #0077ff;
+    }
+    .tabs__item{
+        background-color: #323232;
+        border-radius: 10px;
+    }
+    .tabs__item span{
+        color: white;
+    }
+    .tabs__item[selected="true"]{
+        border-bottom: none;
+    }
+    .tabs__item[selected="false"] span{
+        color: #6d6d6d;
+    }
 }
