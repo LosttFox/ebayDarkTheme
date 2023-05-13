@@ -9,8 +9,7 @@
 @namespace    domain("faccountsettings.ebay.com")
 @namespace    github.com/Still34/azura-styles
 @homepageURL  https://github.com/LosttFox/ebayDarkTheme
-@updateURL    https://raw.githubusercontent.com/LosttFox/ebayDarkTheme/master/ebayDarkTheme.user.css
-@version      0.12.0
+@version      0.8.0
 ==/UserStyle== */
 @-moz-document domain("ebay.com"),
 domain("www.ebay.com"),
@@ -504,6 +503,10 @@ domain("signin.ebay.com") {
     section.section-notice.section-notice--information.s-message {
         background-color: hsl(200, 9%, 20%);
     }
+    section.section-notice.section-notice--information {
+        background-color: hsl(200, 31%, 27%);
+        border: 0.2px solid #2f7684;
+    }
 
     .srp-river-results .clearfix {
         background-color: #18181b;
@@ -863,9 +866,6 @@ domain("signin.ebay.com") {
     .vim.d-quantity .d-quantity__label{
         color: white;
     }
-    .ux-textspans--EMPHASIS {
-        color: #dd1e31 !important;
-    }
     .vim.d-watchlist-link .ux-section-module .ux-textspans--EMPHASIS.ux-textspans--BOLD{
         color: white !important;
     }
@@ -1177,5 +1177,175 @@ domain("signin.ebay.com") {
     }
     .tabs__item[selected="false"] span{
         color: #6d6d6d;
+    }
+    .m-links-accordion ul li.selected{
+        background-color: #323232;
+        border-radius: 10px;
+    }
+    .m-links-accordion ul li.selected > a{
+        color: white !important;
+    }
+    .gh-minicart-body .gh-item__card:hover .gh-info__title{
+        color: #0077ff !important;
+    }
+    section.section-notice.section-notice--confirmation {
+        background-color: hsl(168, 33%, 12%);
+        border: 0.2px solid #3b603a;
+    }
+    .m-search-box.large span.textbox input{
+        background-color: #525252;
+    }
+    button.fake-menu-button__button.btn.btn--secondary > .btn__cell, .fake-btn__cell{
+        color: var(--text-color-anchor);
+    }
+    .vim.d-statusmessage .ux-layout-section--ERROR {
+        background-color: #ec6355;
+    }
+    .vim.d-statusmessage .ux-layout-section--CONGRATS {
+        background-color: #4db100;
+    }
+    .vim.d-statusmessage .ux-layout-section--STATUSCONTAINER .ux-textspans--EMPHASIS {
+        color: #fff;
+    }
+    .x-additional-info__textual-display .ux-textspans--EMPHASIS {
+        color: #dd1e31;
+    }
+    span.ux-textspans.ux-textspans--BOLD.ux-textspans--EMPHASIS{
+        color: #dd1e31;
+    }
+    #mainContent > div:nth-child(3) > div > div > div > div.m-top-nav__bottom > span > div > span > img{
+        filter: brightness(0) saturate(100%) invert(71%) sepia(97%) saturate(685%) hue-rotate(331deg) brightness(94%) contrast(96%);
+        padding: 10px;
+    }
+    .vim.x-item-condition .x-item-condition-value .x-item-condition-desc span.ux-textspans--EMPHASIS {
+        color: white;
+    }
+    #mainContent > form > div.vim-buybox-wrapper > div > div.txn-wrapper-vim__wrapper.txn-wrapper.ocv > div > div.lightbox-dialog__window.lightbox-dialog__window--fade.keyboard-trap--active > div.lightbox-dialog__main > section.txn-wrapper__content > div > marko-destroy-when-detached > div > div > div.place-bid-wrapper-ocv > h2 > span > span{
+        color: white;
+    }
+    #s0-0-1-1-3-placebid-section-offer-section-price-label > span > span{
+        color: white;
+    }
+    #mainContent > form > div.vim-buybox-wrapper > div > div.txn-wrapper-vim__wrapper.txn-wrapper.ocv > div > div.lightbox-dialog__window.lightbox-dialog__window--fade.keyboard-trap--active > div.lightbox-dialog__main > section.txn-wrapper__content > div > marko-destroy-when-detached > div > div > div.place-bid-wrapper-ocv > div.place-bid-offer__wrapper > div > div > span > div > div > div > button:not(:hover){
+        color: white !important;
+        background-color: #383838
+    }
+    #mainContent > form > div.vim-buybox-wrapper > div > div.txn-wrapper-vim__wrapper.txn-wrapper.ocv > div > div.lightbox-dialog__window.lightbox-dialog__window--fade.keyboard-trap--active > div.lightbox-dialog__main > section.txn-wrapper__content > div > marko-destroy-when-detached > div > div > div.place-bid-wrapper-ocv > div.place-bid-offer__wrapper > div > div > span > div > div > div > button:hover{
+        color: white !important;
+        background-color: #0077ff
+    }
+    .app-sio-header-container--title span{
+        color: white;
+    }
+    .app-sio-header-container--primary span{
+        color: white;
+    }
+    .app-sio-header-container--secondary span{
+        color: white;
+    }
+    .app-sio-offer-details .ui-component-label-value-list__value span{
+        color: white;
+    }
+    .app-sio-ctas--actions a.SECONDARY, .app-sio-ctas--actions button.SECONDARY{
+        background-color: #444547;
+        color: #fff !important;
+    }
+    .app-sio-make-offer--panel #app-sio-make-offer-section__price{
+        background-color: #18181B;
+        color: #D7D9DA;
+    }
+    .module{
+        background: #18181B;
+    }
+    .desktop .payment-method-details--option:last-child{
+        background: #18181B;
+    }
+    input.radio__control[type=radio]+span.radio__icon svg.radio__unchecked use{
+        fill: grey;
+    }
+    .credit-card-details .credit-card-container{
+        background: #18181B;
+    }
+    .floating-label label{
+        color: white;
+    }
+    label.floating-label__label--invalid{
+        color: #D91B20
+    }
+    #credit-card-details > div > div > div.form-action.CANCEL > button{
+        color: #3665f3 !important;
+    }
+    section.section-notice.section-notice--attention{
+        background-color: hsl(0, 33%, 12%);
+        border: 0.2px solid #603a3a;
+    }
+    .app-accordion .accordion-expandable-panel .details .details__summary{
+        color: grey;
+    }
+    #vi-frag-btfcontainer-swc > div > div > div > h2 > span > span{
+        color: black;
+    }
+    .contactui-viewmessage .app-river__left .message__cards__container .card__item--visible{
+        border-radius: 4px;
+        border: 0.2px solid #fff;
+    }
+    .msg-content-view .msg-conversation-item-card .msg_conversation-item-card__left .nodestar-item-card .nodestar-item-card__item-container .nodestar-item-card__item-title>h1 a{
+        color: white;
+    }
+    .msg-content-view .msg-conversation-item-card .msg_conversation-item-card__left .nodestar-item-card .nodestar-item-card__item-container .nodestar-item-card__item .cc-section.cc-section__Section span{
+        color: #d34043;
+    }
+    .msg-content-view .app-conversation__message-bubble__grey .app-conversation__message-bubble__message__content{
+        color: white;
+    }
+    svg.icon--send-24{
+        fill: black;
+    }
+    #mainContent > form > div.vim-buybox-wrapper > div > div.txn-wrapper-vim__wrapper.txn-wrapper > div > div.lightbox-dialog__window.lightbox-dialog__window--fade.keyboard-trap--active > div.lightbox-dialog__main > section.txn-wrapper__content > div > div > div > div.bo-main-container__header.bo-main-container__header--short > h2{
+        color: white;
+    }
+    #Body .vi-bc-topM input[type=text], #Body .vi-bc-topM input[type=password], #Body .vi-bc-topM textarea, #Body #CenterPanelDF input[type=text], #Body #CenterPanelDF input[type=password], #Body #CenterPanelDF textarea, #Body #BottomPanelDF input[type=text], #Body #BottomPanelDF input[type=password], #Body #BottomPanelDF textarea, body .oly input[type=text], body .oly input[type=password], body .oly textarea{
+        color: white;
+    }
+    .app-input-price__wrapper .app-input-price__display *{
+        color: white;
+    }
+    h2.bo-main-container__header-title{
+        color: white;
+    }
+    .bo-offer-section-details .labels-values-with-help__labels{
+        color: white;
+    }
+    .contactui-viewmessage .app-river__left .message__card__options .filter-group .btn--tertiary{
+        color: #fff !important;
+        background-color: #444547;
+    }
+    .contactui-viewmessage #app-message-inbox-options .listbox-button__control{
+        color: #fff !important;
+        background-color: #444547;
+    }
+    .contactui-viewmessage #app-message-inbox-options .listbox-button__control:hover{
+        background-color: #242425;
+    }
+    div.listbox__option[role="option"]{
+        background-color: #444547;
+    }
+    .card__item__body--visible{
+        background-color: #242425;
+    }
+    .contactui-viewmessage .app-river__left .message__cards__container .card__conversation-title-from-ebay span span{
+        color: white;
+    }
+    .contactui-viewmessage .app-river__left .message__cards__container .card__item:hover, .contactui-viewmessage .app-river__left .message__cards__container .card__item--active{
+        background-color: white;
+    }
+    .contactui-viewmessage .app-river__left .message__cards__container .card__content-unread, .contactui-viewmessage .app-river__left .message__cards__container .card__item:hover span{
+        color: black;
+    }
+    .app-bid-info-upgrade_wrapper ul li.ui-inline-map-padding>div:last-child{
+        color: white;
+    }
+    .app-header-navigation__action a:hover, .app-header-navigation__action a:visited, .app-header-navigation__action a:focus{
+        color: #0654ba;
     }
 }
