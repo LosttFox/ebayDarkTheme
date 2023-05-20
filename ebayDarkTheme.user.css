@@ -6,10 +6,10 @@
 @namespace    domain("ebay.com")
 @namespace    domain("www.ebay.com")
 @namespace    domain("signin.ebay.com")
-@namespace    domain("faccountsettings.ebay.com")
+@namespace    domain("accountsettings.ebay.com")
 @namespace    github.com/Still34/azura-styles
-@homepageURL  https://github.com/LosttFox/ebayDarkTheme
-@version      0.13.0
+@homepageURL  https://github.com/AKASGaming/ebayDarkTheme
+@version      0.18.0
 ==/UserStyle== */
 @-moz-document domain("ebay.com"),
 domain("www.ebay.com"),
@@ -1121,7 +1121,7 @@ domain("signin.ebay.com") {
     .m-pagination__count-menu-button .fake-menu-button__menu .fake-menu-button__item span{
         color: black !important;
     }
-    button.btn--secondary[disabled], button.btn--secondary[aria-disabled="false"]{
+    .bulk-action button.red-button:not([disabled]):not([aria-disabled="true"]){
         background-color: #a7e7e7;
         color: #00ffff !important;
         border: none !important;
@@ -1194,9 +1194,6 @@ domain("signin.ebay.com") {
     }
     .m-search-box.large span.textbox input{
         background-color: #525252;
-    }
-    button.fake-menu-button__button.btn.btn--secondary > .btn__cell, .fake-btn__cell{
-        color: var(--text-color-anchor);
     }
     .vim.d-statusmessage .ux-layout-section--ERROR {
         background-color: #ec6355;
@@ -1347,5 +1344,197 @@ domain("signin.ebay.com") {
     }
     .app-header-navigation__action a:hover, .app-header-navigation__action a:visited, .app-header-navigation__action a:focus{
         color: #0654ba;
+    }
+    section.section-notice.section-notice--default{
+        background-color: hsl(0, 0%, 30%);
+        border: 0.2px solid #868686;
+    }
+    section.section-notice.section-notice--default > .section-notice__header{
+        color: black;
+    }
+    .lia-message-editor.mce-content-body, .lia-message-draft .lia-message-body{
+        color: white;
+    }
+    .ux-layout-section-evo .ux-labels-values__values, .ux-layout-section-evo .ux-labels-values-with-hints__values{
+        color: white;
+    }
+    .fake-menu-button, .menu-button{
+        background-color: #18181b;
+    }
+    .se-expand-button button.se-expand-button__button:not(.btn--borderless)[aria-expanded=false] {
+        color: black !important;
+    }
+    .summary__attributes--container .summary__attributes--label button.fake-link, .summary__attributes--container .summary__attributes--label button.fake-link:hover, .summary__attributes--container .summary__attributes--label label{
+        color: white;
+    }
+    .se-field--fluid{
+        background-color: #18181b;
+    }
+    .root .header{
+        background-color: #18181b;
+        border: 1px solid var(--color-foreground-disabled);
+    }
+    .header-links .header-links__group{
+        border-right: 1px solid var(--color-foreground-disabled);
+    }
+    .fake-menu__items, .menu__items{
+        background-color: #18181b;
+    }
+    a.fake-menu__item, button.fake-menu__item, div.menu__item[role^=menuitem]{
+        color: white;
+    }
+    .se-filter-menu-button__menu-group.se-filter-menu-button__section .menu__item[aria-checked="true"]{
+        background-color: #515153;
+    }
+    .fake-menu-button__menu a.fake-menu-button__item, .fake-menu-button__menu button.fake-menu-button__item{
+        background-color: #fff;
+    }
+    .draft-delete-confirmation .me-btn{
+        background-color: transparent;
+    }
+    .draft-delete-confirmation .delete {
+        line-height: 1.24;
+        font-size: .9375rem;
+        color: var(--color-red-5) !important;
+    }
+    .app-overview .see-all{
+        background: transparent;
+    }
+    .missing-aspects{
+        background-color: #202022;
+    }
+    .promotion-item{
+        background-color: #202022;
+    }
+    .promotions button.btn--secondary.fake-link{
+        color: #c99a0c !important;
+    }
+    .selling-limits .limits-container{
+        background-color: #202022;
+    }
+    .selling-limits .remaining-text .emphasis{
+        color: white;
+    }
+    .list-it .section-text{
+        color: white;
+    }
+    .qlinks-module .qlinks-cntr{
+        background-color: #18181b;
+    }
+    .selling-activity .selling-activity-container{
+        background-color: hsl(200, 27%, 14%);
+        border: 0.2px solid #27535c;  
+    }
+    .listings-wrapper-container .listings-wrapper .listings .numbers{
+        color: white;
+    }
+    .me-bookmark.me-bookmark.btn--secondary, .me-bookmark.me-bookmark.btn--secondary[disabled] {
+        padding: 0 0 0 10px;
+    }
+    .me-bookmark .bookmark-icon-on {
+        margin-left: auto;
+        margin-right: 10px;
+        display: block !important;
+    }
+    .pl-item .item-price>span:first-child{
+        color: white;
+    }
+    .kyc-notice a.fake-btn, .kyc-page-notice a.fake-btn, .kyc-notice button, .kyc-page-notice button{
+        color: #c1930b !important;
+    }
+    #RightSummaryPanel > div:nth-child(3) > div > div > div:nth-child(2) > ul > li:nth-child(1) > div > span:nth-child(5){
+        padding-left: 3px; 
+    }
+    .app-main-container-upgrade__item_card > section > div{
+        background-color: #18181b;
+        border: 0.2px solid #666869;  
+    }
+    .app-item-info-hori-upgrade__card_title > a{
+        color: white !important;
+    }
+    .app-item-info-hori-upgrade__details .labels-values-with-help__labels{
+        color: white;
+        font-weight: bold;
+    }
+    .app-item-info-hori-upgrade__details .labels-values-with-help__values{
+        color: #3665F3;
+    }
+    .app-container-view-upgrade__wrapper{
+        background-color: #202022;
+    }
+    .app-container-view-upgrade__content_table table > thead > tr > th{
+        background-color: #202022;
+    }
+    .app-container-view-upgrade__content_table th span{
+        color: white;
+    }
+    .app-container-view-upgrade__content_table > table > tbody > tr > td > div > span{
+        color: white;
+    }
+    .app-show-auto-radio__item label span{
+        color: white;
+    }
+    input.radio__control[type="radio"]:checked+span.radio__icon svg.radio__checked{
+        color: #3665F3;
+    }
+    #Body .vi-bc-topM input[type=text], #Body .vi-bc-topM input[type=password], #Body .vi-bc-topM textarea, #Body #CenterPanelDF input[type=text], #Body #CenterPanelDF input[type=password], #Body #CenterPanelDF textarea, #Body #BottomPanelDF input[type=text], #Body #BottomPanelDF input[type=password], #Body #BottomPanelDF textarea, body .oly input[type=text], body .oly input[type=password], body .oly textarea{
+        color: black;
+        font-weight: bold;
+    }
+    #vas-spoke-header-text > span{
+        color: white !important;
+    }
+    #vas-spoke-container > div.vas-spoke-item-card > div > div.vas-itm-card__right-content > div > span:nth-child(1) > span{
+        color: white !important;
+    }
+    #vas-spoke-item-352439280384 > fieldset > div.vas-spoke-items-left > legend > div.vas-spoke-item-heading > span:nth-child(1) > span{
+        color: white !important;
+    }
+    a.fake-btn--secondary.fake-btn--destructive[href]{
+        border-color: #00ffff;
+        color: #00ffff;
+    }
+    a.fake-btn--secondary.fake-btn--destructive[href]:hover{
+        border-color: #00ffff;
+        color: #00ffff;
+    }
+    .page-notice--confirmation {
+        border-top: 2px solid #5ba71b !important;
+        background-color: #5ba71b;
+    }
+    .lightbox-dialog__window{
+        background-color: #18181b;
+        border: 0.4px solid #666869;  
+
+    }
+    .field__label--end{
+        color: white;
+    }
+    .nodestar-item-card__item-id{
+        color: white;
+    }
+    .nodestar-item-card__item-title h1{
+        color: white;
+    }
+    #s0-0-20-5-mainRiver-layout > div.cc-layout__position.cc-layout__position--VERSION_ITEM_CARD_MODULE > div > div > div.nodestar-item-card__item-container.nodestar-item-card__margin-top > div.nodestar-item-card__item > div:nth-child(2) > div > span{
+        color: white;
+    }
+    .wbr{
+        color: white;
+    }
+    .sold-item--content .item__status{
+        color: white;
+    }
+    .fic-footer{
+        background-color: #18181b;
+    }
+    .ay8RkNa9AHVa2cA68CoF .QNBycDL2XJjV9QwGmGuc .details__label, .ay8RkNa9AHVa2cA68CoF .QNBycDL2XJjV9QwGmGuc .details__icon{
+        color: white;
+    }
+    .NS9e6d5sLOfGgEoXyWSW td{
+        color: white;
+    }
+    .meb-top-nav .primary-navigation a, .meb-top-nav .primary-navigation a:visited, .meb-top-nav .primary-navigation a:hover{
+        color: white;
     }
 }
